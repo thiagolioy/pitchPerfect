@@ -10,6 +10,10 @@ import UIKit
 
 class RecordSoundsViewController: UIViewController {
 
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var recordingMessage: UILabel!
+    @IBOutlet weak var recordingButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +26,24 @@ class RecordSoundsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
+    }
+
+    @IBAction func startRecording() {
+        recordingButton.enabled = false;
+        recordingMessage.hidden = false;
+        stopButton.enabled = true;
+        
+        
+    }
+
+    @IBAction func stopRecording() {
+        recordingButton.enabled = true;
+        recordingMessage.hidden = true;
+        stopButton.enabled = false;
+        
+    self.performSegueWithIdentifier("showPlaySoundsVC", sender: nil)
+    }
+    
 }
