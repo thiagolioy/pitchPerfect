@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q54-FL-BXp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Record Sounds View Controller-->
+        <scene sceneID="9HD-GU-rBK">
+            <objects>
+                <viewController storyboardIdentifier="RecordSoundsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lwc-LE-Qhc" customClass="RecordSoundsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="awY-f5-QER"/>
+                        <viewControllerLayoutGuide type="bottom" id="bLf-ml-15i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Szu-g9-ZVR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OYx-9y-lun"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="jha-l7-1lZ" kind="show" identifier="showPlaySoundsVC" id="l5l-2L-5a6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXx-hr-ipj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="-9"/>
+        </scene>
+        <!--Play Sounds View Controller-->
+        <scene sceneID="qSV-VK-8Fo">
+            <objects>
+                <viewController storyboardIdentifier="PlaySoundsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jha-l7-1lZ" customClass="PlaySoundsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0g2-ze-a32"/>
+                        <viewControllerLayoutGuide type="bottom" id="jip-3i-Bmf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9kh-A3-v03">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsq-V3-XLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2127" y="-9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cu4-8u-Vlr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q54-FL-BXp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7Q-Cl-52Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lwc-LE-Qhc" kind="relationship" relationship="rootViewController" id="mbQ-h2-LMY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12u-9z-pzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="-9"/>
+        </scene>
+    </scenes>
+</document>
